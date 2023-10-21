@@ -1,0 +1,175 @@
+:root{
+
+    --Blanco:#ffffff;
+    --Black:#000000;
+    --Celeste:#076aff;
+    --Cobalto:#073596;
+    --grey:#9c9c9c;
+    --LightGrey:#dfe9;
+
+}
+
+.boton {
+    background-color: var(--Cobalto);
+    
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+
+.boton a{
+
+    color:var(--Blanco);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.botonSub {
+    background-color: var(--Cobalto);
+    
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5rem;
+    width: 90%;
+    border: none;
+    color:var(--Blanco);
+    text-decoration: none;
+    font-weight: bold;
+
+
+}
+
+.adb{
+    width: 100%;
+}
+
+.botonSub:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .boton{
+        width: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .adb{
+        width: auto;
+    }
+
+}
+@media (min-width: 768px) {
+    .vices{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+}
+
+.Icon-Services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Icon-Services .icons{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--Cobalto);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Icon-Services h3{
+    font-size: 1.4rem;
+}
+
+.Icon-Services p{
+    line-height: 2;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.SHD{
+    box-shadow: 0px 5px 15px 0px lightslategrey;
+    background-color: var(--Blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.SQU{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.Formulario{
+    
+    background-color: #2b0c1acd;
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.Formulario fieldset{
+    border: none;
+}
+.Formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color:white
+
+}
+
+.form-Cont{
+    margin-bottom: 1rem;
+}
+
+.form-Cont label{
+    color: var(--Blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.form-Cont textarea{
+    height: 20rem;
+
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.ASR{
+    display: flex;
+    justify-content: end;
+}
+.Formulario{
+    align-items: center;
+    background-color: #254e2b;
+    width: 90%;
+    padding:10px
+  }
+fieldset{  
+    
+    width: 90%;
+  }

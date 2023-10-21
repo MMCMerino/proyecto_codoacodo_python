@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./assets/form.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<header>
+
+    <div>
+      <h1>Vivero Doña Rosa</h1>
+    </div>
+    <div>
+      <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="./index.html">Ofertas</a>
+        <a href="#">Contactar</a>
+    </nav>
+    </div>
+
+  </header>
+
+<section>
+
+    <form class="Formulario" action="">
+
+        
+
+        <Fieldset>
+
+            <legend> CONTACTANOS LLENANDO TODOS LOS CAMPOS </legend>
+
+            <div class="form-Cont">
+
+             <label for="">Nombre</label>
+                <input class="input-text" type="text" placeholder="Tu nombre" id="nombre"> 
+
+             
+            </div>
+
+               <div class="form-Cont">
+                     <label for="">Telefono</label>
+                <input class="input-text" type="tel" placeholder="Tu numero" id="telNumero">
+                </div>
+
+
+           <div class="form-Cont">
+
+              <label for="">E-mail</label>
+                <input class="input-text" type="email" placeholder="E-mail" id="email">
+
+           </div>
+
+           <div class="form-Cont">
+
+            <label for="">Mensaje</label>
+                <textarea class="input-text" name="" id="" cols="30" rows="10" placeholder="dejanos tus comentarios" id="mensaje"></textarea>
+
+           </div>
+
+           <div class="ASR">
+
+            <input class="botonSub adb" type="submit" value="Enviar">
+
+           </div>
+
+           
+          
+
+        </Fieldset>
+
+    </form>
+
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const contactForm = document.getElementById("contactForm");
+      contactForm.addEventListener("submit", function(event) {
+          event.preventDefault(); 
+          const emailInput = document.getElementById("email");
+          const emailValue = emailInput.value;
+          if (!isValidEmail(emailValue)) {
+              alert("Por favor, introduce una dirección de correo electrónico válida.");
+              return;
+          }
+
+
+          alert("Formulario enviado con éxito.");
+          contactForm.reset();
+
+      function isValidEmail(email) {
+          const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+          return emailPattern.test(email);
+      }
+  });
+}) </script>
